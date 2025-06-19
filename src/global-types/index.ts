@@ -1,5 +1,3 @@
-
-
 export interface ReviewFormate {
     id: number,
     reviewText: string
@@ -17,8 +15,6 @@ export interface CardFormate {
     verified: string,
     informationQuote: string
 }
-
-
 
 export interface ReviewProps {
     ReviewTitle: string
