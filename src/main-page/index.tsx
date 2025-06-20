@@ -11,13 +11,16 @@ export default function SocialProofMain() {
     const headerTitle = "10,000+ of our users love our products."
 
     return (
-         <main>
-             <section>
-                  <header>
-                      <h1> {headerTitle} </h1>
-                      <CommunParagraph Text={headerInformation} />
+         <main className="font-League font-normal flex flex-col 
+         justify-center items-center  p-7 lg:p-4 lg:mt-10
+          ">
+             <section className="  flex flex-col 
+         justify-center items-center  lg:flex lg:flex-row lg:justify-evenly lg:items-start w-[100%]  ">
+                  <header className="lg:w-[400px] text-center lg:text-left ">
+                      <h1 className="text-normal-x3 text-Magenta font-bold my-4"> {headerTitle} </h1>
+                      <CommunParagraph Text={headerInformation} color='text-Dark-Grayish-Magenta' />
                   </header>
-                 <div>
+                 <div className=" my-4">
                    {
                     ReviewData.map(({reviewText, id}) => {
                          return <ReviewComponent ReviewTitle={reviewText} key={id} />
@@ -25,7 +28,8 @@ export default function SocialProofMain() {
                    }
                  </div>
              </section>
-             <section>
+             
+             <section  className="lg:flex lg:flex-row lg:justify-between lg:mt-2 xl:mt-3">
                  {
                     CardData.map(({id, profilePhoto,userName,verified,informationQuote})  => {
                         return <ProfileCard key={id} profilePhoto={profilePhoto} userName={userName}

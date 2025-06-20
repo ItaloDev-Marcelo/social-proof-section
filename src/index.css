@@ -1,6 +1,34 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 @theme {
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-Magenta: hsl(300, 43%, 22%);
+  --color-Soft-Pink: hsl(333, 80%, 67%);
+  --color-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --color-Grayish-Magenta: hsl(300, 24%, 96%);
+  --text-normal: 0.9375em;
+  --text-normal-x1: 1.5em;
+  --text-normal-x2: 1.6875em;
+  --text-normal-x3: 1.875em;
+  --font-League:"League Spartan", sans-serif;
+}
+
+
+body {
+  background-image: url(./assets/images/bg-pattern-top-mobile.svg)  ,
+   url(./assets/images/bg-pattern-bottom-mobile.svg) ;
+   background-repeat: no-repeat,  no-repeat ;
+  background-size: contain, contain  ;
+  background-position: top 0 left 0,  bottom 0 right 0  ;
+}
+
+
+
+@media (min-width: 1024px) {
+
+  body {
+  background-image: url(./assets/images/bg-pattern-top-desktop.svg)  ,
+   url(./assets/images/bg-pattern-bottom-desktop.svg) ;
+  background-size: auto , auto ;
+}
 }

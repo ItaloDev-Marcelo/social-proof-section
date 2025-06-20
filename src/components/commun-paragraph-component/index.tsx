@@ -1,9 +1,10 @@
 interface CommunParagraphProps {
-    Text: string
+    Text: string,
+    color?: string
 }
 
-const CommunParagraph = ({Text}:CommunParagraphProps) => {
-    return  <p> {Text} </p>
+const CommunParagraph = ({Text,color}:CommunParagraphProps) => {
+    return  <p className={color}> {Text} </p>
 }
 
 export default CommunParagraph
