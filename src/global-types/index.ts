@@ -9,7 +9,7 @@ export interface StartFormate {
 }
 
 export interface CardFormate {
-    id: number,
+    id?: number|string,
     profilePhoto: string,
     userName: string,
     verified: string,
