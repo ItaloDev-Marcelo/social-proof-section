@@ -4,7 +4,7 @@ interface CommunParagraphProps {
 }
 
 const CommunParagraph = ({Text,color}:CommunParagraphProps) => {
-    return  <p className={color}> {Text} </p>
+    return  <p className={` font-medium ${color} `}> {Text} </p>
 }
 
 export default CommunParagraph
