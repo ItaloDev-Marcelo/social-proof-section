@@ -9,26 +9,140 @@
   --text-normal: 0.9375em;
   --text-normal-x1: 1.5em;
   --text-normal-x2: 1.6875em;
-  --text-normal-x3: 1.875em;
+  --text-normal-x3: 2em;
+  --text-normal-x4: 2.5em;
   --font-League:"League Spartan", sans-serif;
 }
 
 
 body {
-  background-image: url(./assets/images/bg-pattern-top-mobile.svg)  ,
-   url(./assets/images/bg-pattern-bottom-mobile.svg) ;
+  background-image: url(./assets/images/bg-pattern-top-mobile.svg) , url(./assets/images/bg-pattern-bottom-mobile.svg) ;
    background-repeat: no-repeat,  no-repeat ;
   background-size: contain, contain  ;
-  background-position: top 0 left 0,  bottom 0 right 0  ;
+  background-position: top  left ,  bottom  right ;
+  background-attachment: fixed;
 }
-
-
 
 @media (min-width: 1024px) {
 
   body {
-  background-image: url(./assets/images/bg-pattern-top-desktop.svg)  ,
-   url(./assets/images/bg-pattern-bottom-desktop.svg) ;
-  background-size: auto , auto ;
+  background-image: url(./assets/images/bg-pattern-top-desktop.svg),url(./assets/images/bg-pattern-bottom-desktop.svg) ;
+  background-size: 45%, 50%  ;
 }
+
+.review-row article:nth-of-type(1) {
+    position: relative;
+    left: -2em;
+}
+
+.review-row article:nth-of-type(2) {
+    position: relative;
+    left: 1em;
+}
+
+.review-row article:nth-of-type(3) {
+    position: relative;
+    left: 3em;
+}
+
+.card-row article:nth-of-type(2) {
+      position: relative;
+      top: 1em;
+}
+
+.card-row article:nth-of-type(3) {
+      position: relative;
+      top: 2em;
+}
+
+}
+
+@media (min-width: 1280px) and  (min-height: 800px)  {
+  main {
+    position: relative;
+    top:4em;
+  }
+
+   main  section:nth-of-type(1) header {
+    margin-left: -4em;
+  }
+
+    .review-row article {
+    margin: 1.1em 0;
+  }
+
+  .card-row {
+     position: relative;
+    top:2em;
+  }
+
+
+    .review-row article:nth-of-type(1) {
+    left: -3em;
+}
+
+.review-row article:nth-of-type(2) {
+    left: 3em;
+}
+
+.review-row article:nth-of-type(3) {
+    left: 8em;
+}
+
+
+  
+
+
+
+}
+
+@media (min-width: 1360px) {
+   .card-row {
+     position: relative;
+    top:1em;
+  }
+
+      .review-row article {
+    margin: 1.1em 0;
+  }
+
+
+  .review-row article:nth-of-type(1) {
+    position: relative;
+    left: -3em;
+}
+
+.review-row article:nth-of-type(2) {
+    position: relative;
+    left: 2.5em;
+}
+
+.review-row article:nth-of-type(3) {
+    position: relative;
+    left: 7em;
+}
+
+
+
+ main  section:nth-of-type(1) header {
+    margin-left: -3em;
+  }
+
+
+}
+
+
+@media (min-width: 1440px) {
+
+    .card-row {
+     position: relative;
+    top:3em;
+  }
+
+
+   main  section:nth-of-type(1) header {
+    margin-left: -1em;
+  }
+
+
 }

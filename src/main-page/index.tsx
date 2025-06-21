@@ -12,15 +12,16 @@ export default function SocialProofMain() {
 
     return (
          <main className="font-League font-normal flex flex-col 
-         justify-center items-center  p-7 lg:p-4 lg:mt-10
+         justify-center items-center  p-7 lg:p-7 lg:mt-10
           ">
              <section className="  flex flex-col 
-         justify-center items-center  lg:flex lg:flex-row lg:justify-evenly lg:items-start w-[100%]  ">
+         justify-center items-center relative xl:right-7
+          lg:flex lg:flex-row lg:justify-evenly  w-[100%]  ">
                   <header className="lg:w-[400px] text-center lg:text-left ">
-                      <h1 className="text-normal-x3 text-Magenta font-bold my-4"> {headerTitle} </h1>
+                      <h1 className="text-normal-x3 xl:text-normal-x4 text-Magenta font-bold my-4"> {headerTitle} </h1>
                       <CommunParagraph Text={headerInformation} color='text-Dark-Grayish-Magenta' />
                   </header>
-                 <div className=" my-4">
+                 <div className=" my-4 review-row ">
                    {
                     ReviewData.map(({reviewText, id}) => {
                          return <ReviewComponent ReviewTitle={reviewText} key={id} />
@@ -29,7 +30,7 @@ export default function SocialProofMain() {
                  </div>
              </section>
              
-             <section  className="lg:flex lg:flex-row lg:justify-between lg:mt-2 xl:mt-3">
+             <section  className="lg:flex lg:flex-row lg:justify-between lg:mt-2 xl:mt-3 card-row">
                  {
                     CardData.map(({id, profilePhoto,userName,verified,informationQuote})  => {
                         return <ProfileCard key={id} profilePhoto={profilePhoto} userName={userName}
